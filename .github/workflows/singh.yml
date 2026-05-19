@@ -1,0 +1,20 @@
+name: Himanshu Singh
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Display Welcome Message
+        run: echo "GitHub Actions Pipeline Running Successfully"
+
+      - name: Check System Information
+        run: uname -a
+
+      - name: List Files
+        run: ls -ltr
